@@ -7,6 +7,35 @@ import org.junit.Assert.*
 import user.UserApi
 import user.UserExtendedOuterClass.UserExtended
 
+const val NOTIFICATION_ID = 412
+const val USER_ID = 591
+
+fun getMockUser(): UserApi.User {
+    val notific = Notification.newBuilder()
+        .setId(NOTIFICATION_ID)
+        .setTitle("Notification title")
+        .setBody("Notification body")
+        .build()
+    val user = UserApi.User.newBuilder()
+        .setId(USER_ID)
+        .setName("John Doe")
+        .setEmail("john.doe@example.com")
+        .setNotific(notific)
+        .build()
+
+    return user
+}
+
+fun getMockUserExtended(): UserExtended {
+    val userExtended = UserExtended.newBuilder()
+        .setUserId(USER_ID)
+        .setAge(25)
+        .setHeight(180)
+        .build()
+
+    return userExtended
+}
+
 /**
  * Example local unit test, which will execute on the development machine (host).
  *
@@ -15,34 +44,18 @@ import user.UserExtendedOuterClass.UserExtended
 class ExampleUnitTest {
     @Test
     fun proto_user() {
-        val notificId = 412
-        val userId = 591
+        val user = getMockUser()
+        val notific = user.notific
+        val extUser = getMockUserExtended()
 
-        val notific = Notification.newBuilder()
-            .setId(notificId)
-            .setTitle("Notification title")
-            .setBody("Notification body")
-            .build()
-        val user = UserApi.User.newBuilder()
-            .setId(userId)
-            .setName("John Doe")
-            .setEmail("john.doe@example.com")
-            .setNotific(notific)
-            .build()
-
-        val userExtended = UserExtended.newBuilder()
-            .setUserId(userId)
-            .setAge(25)
-            .setHeight(180)
-
-        assert(user.id == userId)
+        assert(user.id == USER_ID)
         assert(user.name == "John Doe")
         assert(user.email == "john.doe@example.com")
-        assert(user.notific.id == notificId)
-        assert(user.notific.title == "Notification title")
-        assert(user.notific.body == "Notification body")
-        assert(userExtended.userId == userId)
-        assert(userExtended.age == 25)
-        assert(userExtended.height == 180)
+        assert(notific.id == NOTIFICATION_ID)
+        assert(notific.title == "Notification title")
+        assert(notific.body == "Notification body")
+        assert(extUser.userId == USER_ID)
+        assert(extUser.age == 25)
+        assert(extUser.height == 180)
     }
 }
