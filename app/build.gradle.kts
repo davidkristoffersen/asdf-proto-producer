@@ -99,14 +99,15 @@ protobuf {
     }
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            register<MavenPublication>("release") {
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.davidkristoffersen"
+            artifactId = "asdf-proto-producer"
+            version = "1.0.0"
+
+            afterEvaluate {
                 from(components["release"])
-                groupId = "com.github.davidkristoffsersen"
-                artifactId = "asdf-proto-producer"
-                version = "1.0.0"
             }
         }
     }
