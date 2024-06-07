@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package notification;
+
+// Notification is a message that can be sent to a user.
+message Notification {
+    // ID. Required. A unique identifier for the notification.
+    int32 id = 1;
+    // Title. Required. The title of the notification.
+    string title = 2;
+    // Body. Required. The body of the notification.
+    string body = 3;
+}
