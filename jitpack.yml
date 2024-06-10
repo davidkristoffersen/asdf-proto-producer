@@ -1,4 +1,7 @@
 jdk:
   - openjdk17
+
 install:
-  - ./android/gradlew -p android/ clean build
+  - cd android
+  - ./gradlew clean build
+  - ./gradlew publishToMavenLocal
