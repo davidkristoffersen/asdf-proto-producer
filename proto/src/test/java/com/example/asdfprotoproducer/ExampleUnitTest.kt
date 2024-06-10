@@ -1,16 +1,15 @@
 package com.example.asdfprotoproducer
 
-import notification.NotificationApi.Notification
+import com.example.asdfprotoproducer.java.notification.NotificationApi
+import com.example.asdfprotoproducer.java.user.UserApi
+import com.example.asdfprotoproducer.java.user.UserExtendedOuterClass
 import org.junit.Test
-
-import user.UserApi
-import user.UserExtendedOuterClass.UserExtended
 
 const val NOTIFICATION_ID = 412
 const val USER_ID = 591
 
 fun getMockUser(): UserApi.User {
-    val notific = Notification.newBuilder()
+    val notific = NotificationApi.Notification.newBuilder()
         .setId(NOTIFICATION_ID)
         .setTitle("Notification title")
         .setBody("Notification body")
@@ -25,8 +24,8 @@ fun getMockUser(): UserApi.User {
     return user
 }
 
-fun getMockUserExtended(): UserExtended {
-    val userExtended = UserExtended.newBuilder()
+fun getMockUserExtended(): UserExtendedOuterClass.UserExtended {
+    val userExtended = UserExtendedOuterClass.UserExtended.newBuilder()
         .setUserId(USER_ID)
         .setAge(25)
         .setHeight(180)
