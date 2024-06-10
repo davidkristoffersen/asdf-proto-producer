@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package user;
+
+// UserExtended contains all the personal details we know about the user.
+message UserExtended {
+    // User = User. Required. Contains the user's name and email.
+    int32 userId = 1;
+    // Age. Optional. Will be displayed on the monitors in the salon when purchasing a cut.
+    int32 age = 2;
+    // Height. Optional. Will be displayed on the monitors in the salon when purchasing a cut.
+    int32 height = 3;
+}
