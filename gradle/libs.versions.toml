@@ -3,24 +3,16 @@ agp = "8.2.2"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 protobuf = "3.11.0"
 protobufGradle = "0.9.1"
-protoc = "3.13.0"
 grpc = "1.41.0"
 annotation = "1.3.2"
-lifecycleRuntimeKtx = "2.8.1"
-activityCompose = "1.9.0"
-composeBom = "2024.04.01"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
@@ -29,19 +21,6 @@ grpc-okhttp = { group = "io.grpc", name = "grpc-okhttp", version.ref = "grpc" }
 grpc-protobuf-lite = { group = "io.grpc", name = "grpc-protobuf-lite", version.ref = "grpc" }
 grpc-stub = { group = "io.grpc", name = "grpc-stub", version.ref = "grpc" }
 javax-annotation = { group = "javax.annotation", name = "javax.annotation-api", version.ref = "annotation" }
-protoc-protobuf = { group = "com.google.protobuf", name = "protoc", version.ref = "protoc" }
-protoc-grpc = { group = "io.grpc", name = "protoc-gen-grpc-java", version.ref = "grpc" }
-androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
-androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
-androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-androidx-ui = { group = "androidx.compose.ui", name = "ui" }
-androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
-androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
-androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
-
 
 [plugins]
 android-library = { id = "com.android.library", version.ref = "agp" }

@@ -53,41 +53,6 @@ dependencies {
 
     // Testing
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-}
-
-protobuf {
-    protoc {
-        artifact = if (osdetector.os == "osx") {
-            "com.google.protobuf:protoc:3.13.0:osx-x86_64"
-        } else {
-            "com.google.protobuf:protoc:3.13.0"
-        }
-    }
-    plugins {
-        create("grpc") {
-            artifact = if (osdetector.os == "osx") {
-                "io.grpc:protoc-gen-grpc-java:1.41.0:osx-x86_64"
-            } else {
-                "io.grpc:protoc-gen-grpc-java:1.41.0"
-            }
-        }
-    }
-    generateProtoTasks {
-        all().forEach { task ->
-            task.builtins {
-                create("java") {
-                    option("lite")
-                }
-            }
-            task.plugins {
-                create("grpc") {
-                    option("lite")
-                }
-            }
-        }
-    }
 }
 
 publishing {
@@ -95,7 +60,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.davidkristoffersen"
             artifactId = "asdf-proto-producer"
-            version = "1.0.8"
+            version = "1.0.9"
 
             afterEvaluate {
                 from(components["release"])
