@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Asdf Proto Producer"
 include(":proto")
-include(":app")

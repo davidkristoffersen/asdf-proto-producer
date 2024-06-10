@@ -95,7 +95,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.davidkristoffersen"
             artifactId = "asdf-proto-producer"
-            version = "1.0.5"
+            version = "1.0.7"
 
             afterEvaluate {
                 from(components["release"])
