@@ -1,4 +1,4 @@
-build:
-  steps:
-    - cd android
-    - ./gradlew build
+jdk:
+  - openjdk17
+install:
+  - ./android/gradlew -p android/ clean build
