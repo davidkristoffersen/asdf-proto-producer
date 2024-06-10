@@ -3,7 +3,6 @@ package com.example.asdfprotoproducer
 import notification.NotificationApi.Notification
 import org.junit.Test
 
-import org.junit.Assert.*
 import user.UserApi
 import user.UserExtendedOuterClass.UserExtended
 

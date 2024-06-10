@@ -1,18 +1,23 @@
 plugins {
-    alias(libs.plugins.android.library)
+    alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.protobuf)
-    id("maven-publish")
 }
 
 android {
-    namespace = "com.example.asdfprotoproducer"
+    namespace = "com.example.app"
     compileSdk = 34
 
     defaultConfig {
-        minSdk = 26
+        applicationId = "com.example.app"
+        minSdk = 27
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
 
     buildTypes {
@@ -25,90 +30,57 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = "1.8"
     }
-
-//    publishing {
-//        publishing {
-//            singleVariant("release") {
-//                withSourcesJar()
-//                withJavadocJar()
-//            }
-//        }
-//    }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
+    }
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
 }
-
 
 dependencies {
     // Core
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.ui.graphics)
+    implementation(libs.androidx.ui.tooling.preview)
+    implementation(libs.androidx.material3)
 
     // GRPC
-    implementation(libs.protobuf)
     implementation(libs.grpc.okhttp)
     implementation(libs.grpc.protobuf.lite)
     implementation(libs.grpc.stub)
-    implementation(libs.javax.annotation) {
+    implementation(libs.javax.annotation)
+    val javalite = libs.protobuf.javalite.get()
+    implementation("${javalite.group}:${javalite.name}") {
         version {
-            strictly(libs.versions.annotation.get())
+            strictly(javalite.version.toString())
         }
     }
+
+    // Libraries
+    implementation(project(":proto"))
 
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-}
-
-protobuf {
-    protoc {
-        artifact = if (osdetector.os == "osx") {
-            "com.google.protobuf:protoc:${libs.versions.protobuf.get()}:osx-x86_64"
-        } else {
-            "com.google.protobuf:protoc:${libs.versions.protobuf.get()}"
-        }
-    }
-    plugins {
-        create("grpc") {
-            artifact = if (osdetector.os == "osx") {
-                "io.grpc:protoc-gen-grpc-java:${libs.versions.grpc.get()}:osx-x86_64"
-            } else {
-                "io.grpc:protoc-gen-grpc-java:${libs.versions.grpc.get()}"
-            }
-        }
-    }
-    generateProtoTasks {
-        all().forEach { task ->
-            task.builtins {
-                create("java") {
-                    option("lite")
-                }
-            }
-            task.plugins {
-                create("grpc") {
-                    option("lite")
-                }
-            }
-        }
-    }
-}
-
-publishing {
-    publications {
-        register<MavenPublication>("release") {
-            groupId = "com.github.davidkristoffersen"
-            artifactId = "asdf-proto-producer"
-            version = "1.0.2"
-
-            afterEvaluate {
-                from(components["release"])
-            }
-        }
-    }
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 }
