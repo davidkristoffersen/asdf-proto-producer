@@ -1,8 +1,8 @@
 package com.example.asdfprotoproducer
 
-import com.example.asdfprotoproducer.java.notification.NotificationApi
-import com.example.asdfprotoproducer.java.user.UserApi
-import com.example.asdfprotoproducer.java.user.UserExtendedOuterClass
+import com.example.asdfprotoproducer.java.NotificationApi
+import com.example.asdfprotoproducer.java.UserApi
+import com.example.asdfprotoproducer.java.UserExtendedOuterClass
 import org.junit.Test
 
 const val NOTIFICATION_ID = 412

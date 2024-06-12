@@ -41,10 +41,12 @@ dependencies {
 
     // GRPC
     implementation(libs.grpc.okhttp)
-    implementation(libs.grpc.protobuf.lite)
+    implementation(libs.grpc.protobuf)
+//    implementation(libs.grpc.protobuf.lite)
     implementation(libs.grpc.stub)
     implementation(libs.javax.annotation)
-    val javalite = libs.protobuf.javalite.get()
+    val javalite = libs.protobuf.java.get()
+//    val javalite = libs.protobuf.javalite.get()
     implementation("${javalite.group}:${javalite.name}") {
         version {
             strictly(javalite.version.toString())
@@ -60,7 +62,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.davidkristoffersen"
             artifactId = "asdf-proto-producer"
-            version = "1.1.3"
+            version = "1.1.4"
 
             afterEvaluate {
                 from(components["release"])
