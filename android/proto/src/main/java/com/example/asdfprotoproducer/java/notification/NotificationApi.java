@@ -2,7 +2,7 @@
 // source: proto/notification/notification_api.proto
 
 // Protobuf Java Version: 3.25.1
-package com.example.asdfprotoproducer.java;
+package com.example.asdfprotoproducer.java.notification;
 
 public final class NotificationApi {
   private NotificationApi() {}
@@ -99,15 +99,15 @@ public final class NotificationApi {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.asdfprotoproducer.java.NotificationApi.internal_static_notification_Notification_descriptor;
+      return com.example.asdfprotoproducer.java.notification.NotificationApi.internal_static_notification_Notification_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.asdfprotoproducer.java.NotificationApi.internal_static_notification_Notification_fieldAccessorTable
+      return com.example.asdfprotoproducer.java.notification.NotificationApi.internal_static_notification_Notification_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.asdfprotoproducer.java.NotificationApi.Notification.class, com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder.class);
+              com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.class, com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -271,10 +271,10 @@ public final class NotificationApi {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.asdfprotoproducer.java.NotificationApi.Notification)) {
+      if (!(obj instanceof com.example.asdfprotoproducer.java.notification.NotificationApi.Notification)) {
         return super.equals(obj);
       }
-      com.example.asdfprotoproducer.java.NotificationApi.Notification other = (com.example.asdfprotoproducer.java.NotificationApi.Notification) obj;
+      com.example.asdfprotoproducer.java.notification.NotificationApi.Notification other = (com.example.asdfprotoproducer.java.notification.NotificationApi.Notification) obj;
 
       if (getId()
           != other.getId()) return false;
@@ -304,44 +304,44 @@ public final class NotificationApi {
       return hash;
     }
 
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(byte[] data)
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(java.io.InputStream input)
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -349,26 +349,26 @@ public final class NotificationApi {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseDelimitedFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification parseFrom(
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -381,7 +381,7 @@ public final class NotificationApi {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.asdfprotoproducer.java.NotificationApi.Notification prototype) {
+    public static Builder newBuilder(com.example.asdfprotoproducer.java.notification.NotificationApi.Notification prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -406,21 +406,21 @@ public final class NotificationApi {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:notification.Notification)
-        com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder {
+        com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.asdfprotoproducer.java.NotificationApi.internal_static_notification_Notification_descriptor;
+        return com.example.asdfprotoproducer.java.notification.NotificationApi.internal_static_notification_Notification_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.asdfprotoproducer.java.NotificationApi.internal_static_notification_Notification_fieldAccessorTable
+        return com.example.asdfprotoproducer.java.notification.NotificationApi.internal_static_notification_Notification_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.asdfprotoproducer.java.NotificationApi.Notification.class, com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder.class);
+                com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.class, com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder.class);
       }
 
-      // Construct using com.example.asdfprotoproducer.java.NotificationApi.Notification.newBuilder()
+      // Construct using com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.newBuilder()
       private Builder() {
 
       }
@@ -443,17 +443,17 @@ public final class NotificationApi {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.asdfprotoproducer.java.NotificationApi.internal_static_notification_Notification_descriptor;
+        return com.example.asdfprotoproducer.java.notification.NotificationApi.internal_static_notification_Notification_descriptor;
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.NotificationApi.Notification getDefaultInstanceForType() {
-        return com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance();
+      public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification getDefaultInstanceForType() {
+        return com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.NotificationApi.Notification build() {
-        com.example.asdfprotoproducer.java.NotificationApi.Notification result = buildPartial();
+      public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification build() {
+        com.example.asdfprotoproducer.java.notification.NotificationApi.Notification result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -461,14 +461,14 @@ public final class NotificationApi {
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.NotificationApi.Notification buildPartial() {
-        com.example.asdfprotoproducer.java.NotificationApi.Notification result = new com.example.asdfprotoproducer.java.NotificationApi.Notification(this);
+      public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification buildPartial() {
+        com.example.asdfprotoproducer.java.notification.NotificationApi.Notification result = new com.example.asdfprotoproducer.java.notification.NotificationApi.Notification(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.example.asdfprotoproducer.java.NotificationApi.Notification result) {
+      private void buildPartial0(com.example.asdfprotoproducer.java.notification.NotificationApi.Notification result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.id_ = id_;
@@ -515,16 +515,16 @@ public final class NotificationApi {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.asdfprotoproducer.java.NotificationApi.Notification) {
-          return mergeFrom((com.example.asdfprotoproducer.java.NotificationApi.Notification)other);
+        if (other instanceof com.example.asdfprotoproducer.java.notification.NotificationApi.Notification) {
+          return mergeFrom((com.example.asdfprotoproducer.java.notification.NotificationApi.Notification)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.asdfprotoproducer.java.NotificationApi.Notification other) {
-        if (other == com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.asdfprotoproducer.java.notification.NotificationApi.Notification other) {
+        if (other == com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance()) return this;
         if (other.getId() != 0) {
           setId(other.getId());
         }
@@ -840,12 +840,12 @@ public final class NotificationApi {
     }
 
     // @@protoc_insertion_point(class_scope:notification.Notification)
-    private static final com.example.asdfprotoproducer.java.NotificationApi.Notification DEFAULT_INSTANCE;
+    private static final com.example.asdfprotoproducer.java.notification.NotificationApi.Notification DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.asdfprotoproducer.java.NotificationApi.Notification();
+      DEFAULT_INSTANCE = new com.example.asdfprotoproducer.java.notification.NotificationApi.Notification();
     }
 
-    public static com.example.asdfprotoproducer.java.NotificationApi.Notification getDefaultInstance() {
+    public static com.example.asdfprotoproducer.java.notification.NotificationApi.Notification getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -881,7 +881,7 @@ public final class NotificationApi {
     }
 
     @java.lang.Override
-    public com.example.asdfprotoproducer.java.NotificationApi.Notification getDefaultInstanceForType() {
+    public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -903,8 +903,9 @@ public final class NotificationApi {
     java.lang.String[] descriptorData = {
       "\n)proto/notification/notification_api.pr" +
       "oto\022\014notification\"7\n\014Notification\022\n\n\002id\030" +
-      "\001 \001(\005\022\r\n\005title\030\002 \001(\t\022\014\n\004body\030\003 \001(\tB$\n\"co" +
-      "m.example.asdfprotoproducer.javab\006proto3"
+      "\001 \001(\005\022\r\n\005title\030\002 \001(\t\022\014\n\004body\030\003 \001(\tB1\n/co" +
+      "m.example.asdfprotoproducer.java.notific" +
+      "ationb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

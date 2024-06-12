@@ -2,7 +2,7 @@
 // source: proto/user/user_api.proto
 
 // Protobuf Java Version: 3.25.1
-package com.example.asdfprotoproducer.java;
+package com.example.asdfprotoproducer.java.user;
 
 public final class UserApi {
   private UserApi() {}
@@ -82,7 +82,7 @@ public final class UserApi {
      * <code>.notification.Notification notific = 4;</code>
      * @return The notific.
      */
-    com.example.asdfprotoproducer.java.NotificationApi.Notification getNotific();
+    com.example.asdfprotoproducer.java.notification.NotificationApi.Notification getNotific();
     /**
      * <pre>
      * Notification = Notification. Optional. Will be sent to the user when the cut is ready.
@@ -90,7 +90,7 @@ public final class UserApi {
      *
      * <code>.notification.Notification notific = 4;</code>
      */
-    com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder getNotificOrBuilder();
+    com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder getNotificOrBuilder();
   }
   /**
    * <pre>
@@ -122,15 +122,15 @@ public final class UserApi {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.asdfprotoproducer.java.UserApi.internal_static_user_User_descriptor;
+      return com.example.asdfprotoproducer.java.user.UserApi.internal_static_user_User_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.asdfprotoproducer.java.UserApi.internal_static_user_User_fieldAccessorTable
+      return com.example.asdfprotoproducer.java.user.UserApi.internal_static_user_User_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.asdfprotoproducer.java.UserApi.User.class, com.example.asdfprotoproducer.java.UserApi.User.Builder.class);
+              com.example.asdfprotoproducer.java.user.UserApi.User.class, com.example.asdfprotoproducer.java.user.UserApi.User.Builder.class);
     }
 
     private int bitField0_;
@@ -240,7 +240,7 @@ public final class UserApi {
     }
 
     public static final int NOTIFIC_FIELD_NUMBER = 4;
-    private com.example.asdfprotoproducer.java.NotificationApi.Notification notific_;
+    private com.example.asdfprotoproducer.java.notification.NotificationApi.Notification notific_;
     /**
      * <pre>
      * Notification = Notification. Optional. Will be sent to the user when the cut is ready.
@@ -262,8 +262,8 @@ public final class UserApi {
      * @return The notific.
      */
     @java.lang.Override
-    public com.example.asdfprotoproducer.java.NotificationApi.Notification getNotific() {
-      return notific_ == null ? com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance() : notific_;
+    public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification getNotific() {
+      return notific_ == null ? com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance() : notific_;
     }
     /**
      * <pre>
@@ -273,8 +273,8 @@ public final class UserApi {
      * <code>.notification.Notification notific = 4;</code>
      */
     @java.lang.Override
-    public com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder getNotificOrBuilder() {
-      return notific_ == null ? com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance() : notific_;
+    public com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder getNotificOrBuilder() {
+      return notific_ == null ? com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance() : notific_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -336,10 +336,10 @@ public final class UserApi {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.asdfprotoproducer.java.UserApi.User)) {
+      if (!(obj instanceof com.example.asdfprotoproducer.java.user.UserApi.User)) {
         return super.equals(obj);
       }
-      com.example.asdfprotoproducer.java.UserApi.User other = (com.example.asdfprotoproducer.java.UserApi.User) obj;
+      com.example.asdfprotoproducer.java.user.UserApi.User other = (com.example.asdfprotoproducer.java.user.UserApi.User) obj;
 
       if (getId()
           != other.getId()) return false;
@@ -378,44 +378,44 @@ public final class UserApi {
       return hash;
     }
 
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(byte[] data)
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(java.io.InputStream input)
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -423,26 +423,26 @@ public final class UserApi {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.example.asdfprotoproducer.java.UserApi.User parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.example.asdfprotoproducer.java.UserApi.User parseDelimitedFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.asdfprotoproducer.java.UserApi.User parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserApi.User parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -455,7 +455,7 @@ public final class UserApi {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.asdfprotoproducer.java.UserApi.User prototype) {
+    public static Builder newBuilder(com.example.asdfprotoproducer.java.user.UserApi.User prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -480,21 +480,21 @@ public final class UserApi {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:user.User)
-        com.example.asdfprotoproducer.java.UserApi.UserOrBuilder {
+        com.example.asdfprotoproducer.java.user.UserApi.UserOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.asdfprotoproducer.java.UserApi.internal_static_user_User_descriptor;
+        return com.example.asdfprotoproducer.java.user.UserApi.internal_static_user_User_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.asdfprotoproducer.java.UserApi.internal_static_user_User_fieldAccessorTable
+        return com.example.asdfprotoproducer.java.user.UserApi.internal_static_user_User_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.asdfprotoproducer.java.UserApi.User.class, com.example.asdfprotoproducer.java.UserApi.User.Builder.class);
+                com.example.asdfprotoproducer.java.user.UserApi.User.class, com.example.asdfprotoproducer.java.user.UserApi.User.Builder.class);
       }
 
-      // Construct using com.example.asdfprotoproducer.java.UserApi.User.newBuilder()
+      // Construct using com.example.asdfprotoproducer.java.user.UserApi.User.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -528,17 +528,17 @@ public final class UserApi {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.asdfprotoproducer.java.UserApi.internal_static_user_User_descriptor;
+        return com.example.asdfprotoproducer.java.user.UserApi.internal_static_user_User_descriptor;
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.UserApi.User getDefaultInstanceForType() {
-        return com.example.asdfprotoproducer.java.UserApi.User.getDefaultInstance();
+      public com.example.asdfprotoproducer.java.user.UserApi.User getDefaultInstanceForType() {
+        return com.example.asdfprotoproducer.java.user.UserApi.User.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.UserApi.User build() {
-        com.example.asdfprotoproducer.java.UserApi.User result = buildPartial();
+      public com.example.asdfprotoproducer.java.user.UserApi.User build() {
+        com.example.asdfprotoproducer.java.user.UserApi.User result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -546,14 +546,14 @@ public final class UserApi {
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.UserApi.User buildPartial() {
-        com.example.asdfprotoproducer.java.UserApi.User result = new com.example.asdfprotoproducer.java.UserApi.User(this);
+      public com.example.asdfprotoproducer.java.user.UserApi.User buildPartial() {
+        com.example.asdfprotoproducer.java.user.UserApi.User result = new com.example.asdfprotoproducer.java.user.UserApi.User(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.example.asdfprotoproducer.java.UserApi.User result) {
+      private void buildPartial0(com.example.asdfprotoproducer.java.user.UserApi.User result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.id_ = id_;
@@ -608,16 +608,16 @@ public final class UserApi {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.asdfprotoproducer.java.UserApi.User) {
-          return mergeFrom((com.example.asdfprotoproducer.java.UserApi.User)other);
+        if (other instanceof com.example.asdfprotoproducer.java.user.UserApi.User) {
+          return mergeFrom((com.example.asdfprotoproducer.java.user.UserApi.User)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.asdfprotoproducer.java.UserApi.User other) {
-        if (other == com.example.asdfprotoproducer.java.UserApi.User.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.asdfprotoproducer.java.user.UserApi.User other) {
+        if (other == com.example.asdfprotoproducer.java.user.UserApi.User.getDefaultInstance()) return this;
         if (other.getId() != 0) {
           setId(other.getId());
         }
@@ -915,9 +915,9 @@ public final class UserApi {
         return this;
       }
 
-      private com.example.asdfprotoproducer.java.NotificationApi.Notification notific_;
+      private com.example.asdfprotoproducer.java.notification.NotificationApi.Notification notific_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.asdfprotoproducer.java.NotificationApi.Notification, com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder, com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder> notificBuilder_;
+          com.example.asdfprotoproducer.java.notification.NotificationApi.Notification, com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder, com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder> notificBuilder_;
       /**
        * <pre>
        * Notification = Notification. Optional. Will be sent to the user when the cut is ready.
@@ -937,9 +937,9 @@ public final class UserApi {
        * <code>.notification.Notification notific = 4;</code>
        * @return The notific.
        */
-      public com.example.asdfprotoproducer.java.NotificationApi.Notification getNotific() {
+      public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification getNotific() {
         if (notificBuilder_ == null) {
-          return notific_ == null ? com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance() : notific_;
+          return notific_ == null ? com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance() : notific_;
         } else {
           return notificBuilder_.getMessage();
         }
@@ -951,7 +951,7 @@ public final class UserApi {
        *
        * <code>.notification.Notification notific = 4;</code>
        */
-      public Builder setNotific(com.example.asdfprotoproducer.java.NotificationApi.Notification value) {
+      public Builder setNotific(com.example.asdfprotoproducer.java.notification.NotificationApi.Notification value) {
         if (notificBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -972,7 +972,7 @@ public final class UserApi {
        * <code>.notification.Notification notific = 4;</code>
        */
       public Builder setNotific(
-          com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder builderForValue) {
+          com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder builderForValue) {
         if (notificBuilder_ == null) {
           notific_ = builderForValue.build();
         } else {
@@ -989,11 +989,11 @@ public final class UserApi {
        *
        * <code>.notification.Notification notific = 4;</code>
        */
-      public Builder mergeNotific(com.example.asdfprotoproducer.java.NotificationApi.Notification value) {
+      public Builder mergeNotific(com.example.asdfprotoproducer.java.notification.NotificationApi.Notification value) {
         if (notificBuilder_ == null) {
           if (((bitField0_ & 0x00000008) != 0) &&
             notific_ != null &&
-            notific_ != com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance()) {
+            notific_ != com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance()) {
             getNotificBuilder().mergeFrom(value);
           } else {
             notific_ = value;
@@ -1031,7 +1031,7 @@ public final class UserApi {
        *
        * <code>.notification.Notification notific = 4;</code>
        */
-      public com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder getNotificBuilder() {
+      public com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder getNotificBuilder() {
         bitField0_ |= 0x00000008;
         onChanged();
         return getNotificFieldBuilder().getBuilder();
@@ -1043,12 +1043,12 @@ public final class UserApi {
        *
        * <code>.notification.Notification notific = 4;</code>
        */
-      public com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder getNotificOrBuilder() {
+      public com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder getNotificOrBuilder() {
         if (notificBuilder_ != null) {
           return notificBuilder_.getMessageOrBuilder();
         } else {
           return notific_ == null ?
-              com.example.asdfprotoproducer.java.NotificationApi.Notification.getDefaultInstance() : notific_;
+              com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.getDefaultInstance() : notific_;
         }
       }
       /**
@@ -1059,11 +1059,11 @@ public final class UserApi {
        * <code>.notification.Notification notific = 4;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.example.asdfprotoproducer.java.NotificationApi.Notification, com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder, com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder> 
+          com.example.asdfprotoproducer.java.notification.NotificationApi.Notification, com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder, com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder> 
           getNotificFieldBuilder() {
         if (notificBuilder_ == null) {
           notificBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.example.asdfprotoproducer.java.NotificationApi.Notification, com.example.asdfprotoproducer.java.NotificationApi.Notification.Builder, com.example.asdfprotoproducer.java.NotificationApi.NotificationOrBuilder>(
+              com.example.asdfprotoproducer.java.notification.NotificationApi.Notification, com.example.asdfprotoproducer.java.notification.NotificationApi.Notification.Builder, com.example.asdfprotoproducer.java.notification.NotificationApi.NotificationOrBuilder>(
                   getNotific(),
                   getParentForChildren(),
                   isClean());
@@ -1088,12 +1088,12 @@ public final class UserApi {
     }
 
     // @@protoc_insertion_point(class_scope:user.User)
-    private static final com.example.asdfprotoproducer.java.UserApi.User DEFAULT_INSTANCE;
+    private static final com.example.asdfprotoproducer.java.user.UserApi.User DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.asdfprotoproducer.java.UserApi.User();
+      DEFAULT_INSTANCE = new com.example.asdfprotoproducer.java.user.UserApi.User();
     }
 
-    public static com.example.asdfprotoproducer.java.UserApi.User getDefaultInstance() {
+    public static com.example.asdfprotoproducer.java.user.UserApi.User getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1129,7 +1129,7 @@ public final class UserApi {
     }
 
     @java.lang.Override
-    public com.example.asdfprotoproducer.java.UserApi.User getDefaultInstanceForType() {
+    public com.example.asdfprotoproducer.java.user.UserApi.User getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -1161,14 +1161,14 @@ public final class UserApi {
       "nded\032\022.user.UserExtended\"\000\022:\n\016UpdateExte" +
       "nded\022\022.user.UserExtended\032\022.user.UserExte" +
       "nded\"\000\022:\n\016DeleteExtended\022\022.user.UserExte" +
-      "nded\032\022.user.UserExtended\"\000B$\n\"com.exampl" +
-      "e.asdfprotoproducer.javab\006proto3"
+      "nded\032\022.user.UserExtended\"\000B)\n\'com.exampl" +
+      "e.asdfprotoproducer.java.userb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          com.example.asdfprotoproducer.java.UserExtendedOuterClass.getDescriptor(),
-          com.example.asdfprotoproducer.java.NotificationApi.getDescriptor(),
+          com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.getDescriptor(),
+          com.example.asdfprotoproducer.java.notification.NotificationApi.getDescriptor(),
         });
     internal_static_user_User_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -1176,8 +1176,8 @@ public final class UserApi {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_user_User_descriptor,
         new java.lang.String[] { "Id", "Name", "Email", "Notific", });
-    com.example.asdfprotoproducer.java.UserExtendedOuterClass.getDescriptor();
-    com.example.asdfprotoproducer.java.NotificationApi.getDescriptor();
+    com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.getDescriptor();
+    com.example.asdfprotoproducer.java.notification.NotificationApi.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

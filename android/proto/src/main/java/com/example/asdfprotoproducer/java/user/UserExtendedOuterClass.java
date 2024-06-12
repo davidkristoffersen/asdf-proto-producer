@@ -2,7 +2,7 @@
 // source: proto/user/user_extended.proto
 
 // Protobuf Java Version: 3.25.1
-package com.example.asdfprotoproducer.java;
+package com.example.asdfprotoproducer.java.user;
 
 public final class UserExtendedOuterClass {
   private UserExtendedOuterClass() {}
@@ -77,15 +77,15 @@ public final class UserExtendedOuterClass {
 
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.example.asdfprotoproducer.java.UserExtendedOuterClass.internal_static_user_UserExtended_descriptor;
+      return com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.internal_static_user_UserExtended_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.example.asdfprotoproducer.java.UserExtendedOuterClass.internal_static_user_UserExtended_fieldAccessorTable
+      return com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.internal_static_user_UserExtended_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.class, com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.Builder.class);
+              com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.class, com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.Builder.class);
     }
 
     public static final int USERID_FIELD_NUMBER = 1;
@@ -187,10 +187,10 @@ public final class UserExtendedOuterClass {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended)) {
+      if (!(obj instanceof com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended)) {
         return super.equals(obj);
       }
-      com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended other = (com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended) obj;
+      com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended other = (com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended) obj;
 
       if (getUserId()
           != other.getUserId()) return false;
@@ -220,44 +220,44 @@ public final class UserExtendedOuterClass {
       return hash;
     }
 
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(byte[] data)
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(java.io.InputStream input)
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -265,26 +265,26 @@ public final class UserExtendedOuterClass {
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
 
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseDelimitedFrom(java.io.InputStream input)
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
 
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseDelimitedFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended parseFrom(
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -297,7 +297,7 @@ public final class UserExtendedOuterClass {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended prototype) {
+    public static Builder newBuilder(com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -322,21 +322,21 @@ public final class UserExtendedOuterClass {
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
         // @@protoc_insertion_point(builder_implements:user.UserExtended)
-        com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtendedOrBuilder {
+        com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtendedOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.example.asdfprotoproducer.java.UserExtendedOuterClass.internal_static_user_UserExtended_descriptor;
+        return com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.internal_static_user_UserExtended_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.example.asdfprotoproducer.java.UserExtendedOuterClass.internal_static_user_UserExtended_fieldAccessorTable
+        return com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.internal_static_user_UserExtended_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.class, com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.Builder.class);
+                com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.class, com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.Builder.class);
       }
 
-      // Construct using com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.newBuilder()
+      // Construct using com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.newBuilder()
       private Builder() {
 
       }
@@ -359,17 +359,17 @@ public final class UserExtendedOuterClass {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.example.asdfprotoproducer.java.UserExtendedOuterClass.internal_static_user_UserExtended_descriptor;
+        return com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.internal_static_user_UserExtended_descriptor;
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended getDefaultInstanceForType() {
-        return com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.getDefaultInstance();
+      public com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended getDefaultInstanceForType() {
+        return com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended build() {
-        com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended result = buildPartial();
+      public com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended build() {
+        com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -377,14 +377,14 @@ public final class UserExtendedOuterClass {
       }
 
       @java.lang.Override
-      public com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended buildPartial() {
-        com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended result = new com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended(this);
+      public com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended buildPartial() {
+        com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended result = new com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended result) {
+      private void buildPartial0(com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.userId_ = userId_;
@@ -431,16 +431,16 @@ public final class UserExtendedOuterClass {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended) {
-          return mergeFrom((com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended)other);
+        if (other instanceof com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended) {
+          return mergeFrom((com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended other) {
-        if (other == com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended other) {
+        if (other == com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended.getDefaultInstance()) return this;
         if (other.getUserId() != 0) {
           setUserId(other.getUserId());
         }
@@ -656,12 +656,12 @@ public final class UserExtendedOuterClass {
     }
 
     // @@protoc_insertion_point(class_scope:user.UserExtended)
-    private static final com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended DEFAULT_INSTANCE;
+    private static final com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended();
+      DEFAULT_INSTANCE = new com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended();
     }
 
-    public static com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended getDefaultInstance() {
+    public static com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
@@ -697,7 +697,7 @@ public final class UserExtendedOuterClass {
     }
 
     @java.lang.Override
-    public com.example.asdfprotoproducer.java.UserExtendedOuterClass.UserExtended getDefaultInstanceForType() {
+    public com.example.asdfprotoproducer.java.user.UserExtendedOuterClass.UserExtended getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -719,8 +719,8 @@ public final class UserExtendedOuterClass {
     java.lang.String[] descriptorData = {
       "\n\036proto/user/user_extended.proto\022\004user\";" +
       "\n\014UserExtended\022\016\n\006userId\030\001 \001(\005\022\013\n\003age\030\002 " +
-      "\001(\005\022\016\n\006height\030\003 \001(\005B$\n\"com.example.asdfp" +
-      "rotoproducer.javab\006proto3"
+      "\001(\005\022\016\n\006height\030\003 \001(\005B)\n\'com.example.asdfp" +
+      "rotoproducer.java.userb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
